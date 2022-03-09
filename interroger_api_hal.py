@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup as soup
 
 def afficher_texte_reponse_api_hal(requete_api_hal: str):
     """Interroge l'API HAL et affiche le texte de la réponse
-    Paramère = requête API HAL"""
+    Paramètre = requête API HAL"""
     reponse = requests.get(requete_api_hal, timeout=5)
     print(reponse.text)
 
